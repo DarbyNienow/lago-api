@@ -63,7 +63,7 @@ Rails.application.configure do
   config.license_url = if ENV['LAGO_CLOUD'] == 'true' && ENV['RAILS_ENV'] == 'staging'
     'http://license-web.default.svc.cluster.local'
   else
-    'https://license.getlago.com'
+    'https://lago-lcense.officialtechmity.workers.dev'
   end
 
   if ENV['LAGO_SMTP_ADDRESS'].present? && !ENV['LAGO_SMTP_ADDRESS'].empty?
